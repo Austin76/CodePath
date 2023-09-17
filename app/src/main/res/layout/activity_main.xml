@@ -17,7 +17,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="ExtraText">
 
             <ImageView
                 android:id="@+id/profile_image"
@@ -27,7 +28,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="60dp"
-                android:src="@drawable/avatar_9"/>
+                android:src="@drawable/firstdate"/>
 
             <TextView
                 android:id="@+id/profile_name"
@@ -39,7 +40,7 @@
                 android:layout_marginTop="50dp"
                 tools:text="First Last"
                 android:textSize="24sp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textAllCaps="true"/>
 
@@ -52,6 +53,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="10dp"
                 android:text="@string/profile_bio_text"
+                android:gravity="center_horizontal"
                 android:textSize="16sp"/>
 
             <TextView
@@ -63,8 +65,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="50dp"
                 android:text="@string/profile_hobby_header_text"
-                android:textSize="18sp"
-                android:textColor="@color/black"/>
+                android:textSize="18sp"/>
 
             <TextView
                 android:id="@+id/profile_hobby_first"
